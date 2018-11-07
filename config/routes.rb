@@ -12,4 +12,7 @@ resources :users, only: [:show, :new, :create]
 resources :items, only: [:show, :new]
 resources :ownerships, only: [:create, :destroy]
 
+get 'rankings/want', to: 'rankings#want'
+get 'rankings/have', to: 'rankings#have'
+
 end
